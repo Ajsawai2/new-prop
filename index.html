@@ -196,15 +196,18 @@
         }, 38000);
       }
 
-      btn.addEventListener("click", (e) => {
-        heart.style.display = "block";
-        love.style.display = "block";
-        copyRight.style.display = "block";
-        typing();
-        ps.style.display = "none";
+     btn.addEventListener("click", (e) => {
+        setTimeout(() => {
+          heart.style.display = "block";
+          love.style.display = "block";
+          copyRight.style.display = "block";
+          typing();
+          ps.style.display = "none";
+          outTime();
+        }, 2000);
+
         let audio = new Audio("k2.mp3");
         audio.play();
-        outTime();
       });
     </script>
   </body>
